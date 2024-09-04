@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AA293542C88F7290098ADF6 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA293532C88F7290098ADF6 /* AppEnvironment.swift */; };
+		4AA2935C2C8900390098ADF6 /* when_app_is_launched_with_no_orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA2935B2C8900390098ADF6 /* when_app_is_launched_with_no_orders.swift */; };
 		4AB20C252C77F7FC004B26C5 /* HelloCofeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB20C242C77F7FC004B26C5 /* HelloCofeeApp.swift */; };
 		4AB20C272C77F7FC004B26C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB20C262C77F7FC004B26C5 /* ContentView.swift */; };
 		4AB20C292C77F7FD004B26C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AB20C282C77F7FD004B26C5 /* Assets.xcassets */; };
@@ -18,7 +20,20 @@
 		4AB20C3F2C781E8A004B26C5 /* OrderCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB20C3E2C781E8A004B26C5 /* OrderCellView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4AA2935F2C8900390098ADF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AB20C192C77F7FC004B26C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AB20C202C77F7FC004B26C5;
+			remoteInfo = HelloCofee;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		4AA293532C88F7290098ADF6 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		4AA293592C8900390098ADF6 /* HelloCofeEnd2EndITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloCofeEnd2EndITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AA2935B2C8900390098ADF6 /* when_app_is_launched_with_no_orders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = when_app_is_launched_with_no_orders.swift; sourceTree = "<group>"; };
 		4AB20C212C77F7FC004B26C5 /* HelloCofee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCofee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AB20C242C77F7FC004B26C5 /* HelloCofeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCofeeApp.swift; sourceTree = "<group>"; };
 		4AB20C262C77F7FC004B26C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +47,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4AA293562C8900390098ADF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AB20C1E2C77F7FC004B26C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -42,10 +64,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AA293522C88F70B0098ADF6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4AA293532C88F7290098ADF6 /* AppEnvironment.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4AA2935A2C8900390098ADF6 /* HelloCofeEnd2EndITests */ = {
+			isa = PBXGroup;
+			children = (
+				4AA2935B2C8900390098ADF6 /* when_app_is_launched_with_no_orders.swift */,
+			);
+			path = HelloCofeEnd2EndITests;
+			sourceTree = "<group>";
+		};
 		4AB20C182C77F7FC004B26C5 = {
 			isa = PBXGroup;
 			children = (
 				4AB20C232C77F7FC004B26C5 /* HelloCofee */,
+				4AA2935A2C8900390098ADF6 /* HelloCofeEnd2EndITests */,
 				4AB20C222C77F7FC004B26C5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				4AB20C212C77F7FC004B26C5 /* HelloCofee.app */,
+				4AA293592C8900390098ADF6 /* HelloCofeEnd2EndITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +101,7 @@
 		4AB20C232C77F7FC004B26C5 /* HelloCofee */ = {
 			isa = PBXGroup;
 			children = (
+				4AA293522C88F70B0098ADF6 /* Utils */,
 				4AB20C3D2C781E78004B26C5 /* Views */,
 				4AB20C3A2C781DBB004B26C5 /* Extensions */,
 				4AB20C352C77F895004B26C5 /* Models */,
@@ -117,6 +158,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4AA293582C8900390098ADF6 /* HelloCofeEnd2EndITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AA293612C8900390098ADF6 /* Build configuration list for PBXNativeTarget "HelloCofeEnd2EndITests" */;
+			buildPhases = (
+				4AA293552C8900390098ADF6 /* Sources */,
+				4AA293562C8900390098ADF6 /* Frameworks */,
+				4AA293572C8900390098ADF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AA293602C8900390098ADF6 /* PBXTargetDependency */,
+			);
+			name = HelloCofeEnd2EndITests;
+			productName = HelloCofeEnd2EndITests;
+			productReference = 4AA293592C8900390098ADF6 /* HelloCofeEnd2EndITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		4AB20C202C77F7FC004B26C5 /* HelloCofee */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AB20C2F2C77F7FD004B26C5 /* Build configuration list for PBXNativeTarget "HelloCofee" */;
@@ -144,6 +203,10 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					4AA293582C8900390098ADF6 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 4AB20C202C77F7FC004B26C5;
+					};
 					4AB20C202C77F7FC004B26C5 = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -163,11 +226,19 @@
 			projectRoot = "";
 			targets = (
 				4AB20C202C77F7FC004B26C5 /* HelloCofee */,
+				4AA293582C8900390098ADF6 /* HelloCofeEnd2EndITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4AA293572C8900390098ADF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AB20C1F2C77F7FC004B26C5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -180,6 +251,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4AA293552C8900390098ADF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA2935C2C8900390098ADF6 /* when_app_is_launched_with_no_orders.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4AB20C1D2C77F7FC004B26C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,6 +268,7 @@
 				4AB20C392C77FDF2004B26C5 /* CoffeeModel.swift in Sources */,
 				4AB20C272C77F7FC004B26C5 /* ContentView.swift in Sources */,
 				4AB20C3C2C781DD6004B26C5 /* NumberFormatterExtension.swift in Sources */,
+				4AA293542C88F7290098ADF6 /* AppEnvironment.swift in Sources */,
 				4AB20C372C77F8A7004B26C5 /* Order.swift in Sources */,
 				4AB20C252C77F7FC004B26C5 /* HelloCofeeApp.swift in Sources */,
 			);
@@ -196,7 +276,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4AA293602C8900390098ADF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AB20C202C77F7FC004B26C5 /* HelloCofee */;
+			targetProxy = 4AA2935F2C8900390098ADF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		4AA293622C8900390098ADF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 235VR6UC3H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saudAnup.HelloCofeEnd2EndITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HelloCofee;
+			};
+			name = Debug;
+		};
+		4AA293632C8900390098ADF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 235VR6UC3H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saudAnup.HelloCofeEnd2EndITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HelloCofee;
+			};
+			name = Release;
+		};
 		4AB20C2D2C77F7FD004B26C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -377,6 +499,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4AA293612C8900390098ADF6 /* Build configuration list for PBXNativeTarget "HelloCofeEnd2EndITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA293622C8900390098ADF6 /* Debug */,
+				4AA293632C8900390098ADF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4AB20C1C2C77F7FC004B26C5 /* Build configuration list for PBXProject "HelloCofee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
