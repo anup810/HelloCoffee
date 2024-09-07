@@ -16,6 +16,7 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject private var model: CoffeeModel
+    
     @State private var isPresented: Bool = false
     
     private func populateOrders() async {
@@ -51,11 +52,17 @@ struct ContentView: View {
                 } else {
                     List {
                         ForEach(model.orders) { (order: Order) in
-                            OrderCellView(order: order)
+                            NavigationLink(value: order.id) {
+                                OrderCellView(order: order)
+                            }
+                            
                         }.onDelete(perform: deleteOrder)
-                    }
+                    }.accessibilityIdentifier("orderList")
                 }
             }
+            .navigationDestination(for: Int.self, destination: { orderId in
+                OrderDetailsView(orderId: orderId)
+            })
             .task {
                 await populateOrders()
             }
